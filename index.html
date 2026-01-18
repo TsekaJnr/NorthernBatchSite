@@ -50,12 +50,10 @@
     <nav id="navbar" class="fixed w-full z-50 transition-all duration-300 bg-transparent py-4 md:py-5 border-b border-transparent">
         <div class="container mx-auto px-6 flex justify-between items-center">
             <div class="flex items-center gap-2 relative z-50">
-                <div class="bg-amber-500 p-2 rounded-lg shadow-lg shadow-amber-500/20">
-                    <i data-lucide="hammer" class="text-white w-5 h-5 md:w-6 md:h-6"></i>
-                </div>
-                <span id="nav-brand-text" class="text-xl md:text-2xl font-bold tracking-tight text-white transition-colors">
-                    Northern<span class="text-amber-500">Batch</span>
-                </span>
+                <!-- LOGO REPLACED HERE -->
+                <a href="#home">
+                    <img src="images/logo.jpeg" onerror="this.src='https://placehold.co/200x80/transparent/white?text=NorthernBatch'" alt="NorthernBatch Logo" class="h-10 md:h-14 w-auto object-contain transition-transform hover:scale-105 rounded-xl">
+                </a>
             </div>
             
             <!-- Desktop Menu -->
@@ -274,7 +272,7 @@
                 <div class="group bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-2xl hover:shadow-amber-500/10 transition-all duration-300 transform hover:-translate-y-2 flex flex-col" data-aos="fade-up" data-aos-delay="100">
                     <div class="h-56 md:h-64 overflow-hidden relative">
                         <div class="absolute inset-0 bg-slate-900/30 group-hover:bg-slate-900/10 transition-colors z-10"></div>
-                        <div class="absolute top-4 right-4 z-20 bg-white/90 backdrop-blur px-3 py-1 rounded-full text-xs font-bold text-amber-600 shadow-sm">Custom Quote</div>
+                        <div class="absolute top-4 right-4 z-20 bg-white/90 backdrop-blur px-3 py-1 rounded-full text-xs font-bold text-amber-600 shadow-sm">From R450/m²</div>
                         <img src="images/epoxyfloor.jpeg" onerror="this.src='https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&q=80&w=800'" alt="Epoxy" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700" />
                     </div>
                     <div class="p-6 md:p-8 flex-grow">
@@ -366,7 +364,7 @@
                 <div class="group bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-2xl hover:shadow-amber-500/10 transition-all duration-300 transform hover:-translate-y-2 flex flex-col" data-aos="fade-up" data-aos-delay="300">
                     <div class="h-56 md:h-64 overflow-hidden relative">
                          <div class="absolute inset-0 bg-slate-900/30 group-hover:bg-slate-900/10 transition-colors z-10"></div>
-                        <div class="absolute top-4 right-4 z-20 bg-white/90 backdrop-blur px-3 py-1 rounded-full text-xs font-bold text-amber-600 shadow-sm">Custom Quote</div>
+                        <div class="absolute top-4 right-4 z-20 bg-white/90 backdrop-blur px-3 py-1 rounded-full text-xs font-bold text-amber-600 shadow-sm">Call-out R750</div>
                         <img src="images/plumbing2.jpeg" onerror="this.src='https://images.unsplash.com/photo-1581094288338-2314dddb7ece?auto=format&fit=crop&q=80&w=800'" alt="Plumbing" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700" />
                     </div>
                     <div class="p-6 md:p-8 flex-grow">
@@ -387,7 +385,7 @@
                 <div class="group bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-2xl hover:shadow-amber-500/10 transition-all duration-300 transform hover:-translate-y-2 flex flex-col" data-aos="fade-up" data-aos-delay="350">
                     <div class="h-56 md:h-64 overflow-hidden relative">
                          <div class="absolute inset-0 bg-slate-900/30 group-hover:bg-slate-900/10 transition-colors z-10"></div>
-                        <div class="absolute top-4 right-4 z-20 bg-white/90 backdrop-blur px-3 py-1 rounded-full text-xs font-bold text-amber-600 shadow-sm">Custom Quote</div>
+                        <div class="absolute top-4 right-4 z-20 bg-white/90 backdrop-blur px-3 py-1 rounded-full text-xs font-bold text-amber-600 shadow-sm">Call-out R850</div>
                         <img src="images/electrical.jpeg" onerror="this.src='https://images.unsplash.com/photo-1621905251189-08b45d6a269e?auto=format&fit=crop&q=80&w=800'" alt="Electrical" class="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700" />
                     </div>
                     <div class="p-6 md:p-8 flex-grow">
@@ -485,7 +483,7 @@
                 <div class="md:col-span-2 relative group overflow-hidden rounded-2xl cursor-pointer" onclick="openGallery()" data-aos="zoom-in" data-aos-delay="300">
                     <img src="images/plumbinmultistory.jpeg" onerror="this.src='https://images.unsplash.com/photo-1632759145351-1d592919f522?auto=format&fit=crop&q=80&w=800'" alt="Roof" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
                     <div class="absolute inset-0 bg-gradient-to-t from-slate-900 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex flex-col justify-end p-8">
-                        <span class="text-amber-400 font-bold text-xs uppercase mb-1 tracking-wider">Residential</span>
+                        <span class="text-amber-400 font-bold text-xs uppercase mb-1 tracking-wider">Commercial</span>
                         <h4 class="text-white font-bold text-2xl">MultiStory Plumbing</h4>
                     </div>
                 </div>
@@ -596,27 +594,6 @@
                             <i data-lucide="maximize-2" class="text-white w-8 h-8"></i>
                         </div>
                         <div class="absolute bottom-0 left-0 p-3 w-full bg-gradient-to-t from-black/80 to-transparent"><p class="text-white font-bold text-sm">Wiring & Installations</p></div>
-                    </div>
-                     <div class="group relative aspect-video rounded-xl overflow-hidden bg-slate-800 cursor-pointer" onclick="openLightbox('images/tiling.jpeg')">
-                        <img src="images/tiling.jpeg" onerror="this.src='https://images.unsplash.com/photo-1621905251189-08b45d6a269e?auto=format&fit=crop&q=80&w=800'" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" alt="Work">
-                        <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
-                            <i data-lucide="maximize-2" class="text-white w-8 h-8"></i>
-                        </div>
-                        <div class="absolute bottom-0 left-0 p-3 w-full bg-gradient-to-t from-black/80 to-transparent"><p class="text-white font-bold text-sm">Tiling</p></div>
-                    </div>
-                     <div class="group relative aspect-video rounded-xl overflow-hidden bg-slate-800 cursor-pointer" onclick="openLightbox('images/plumbingtoilet.jpeg')">
-                        <img src="images/plumbingtoilet.jpeg" onerror="this.src='https://images.unsplash.com/photo-1621905251189-08b45d6a269e?auto=format&fit=crop&q=80&w=800'" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" alt="Work">
-                        <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
-                            <i data-lucide="maximize-2" class="text-white w-8 h-8"></i>
-                        </div>
-                        <div class="absolute bottom-0 left-0 p-3 w-full bg-gradient-to-t from-black/80 to-transparent"><p class="text-white font-bold text-sm">Toilet Installation</p></div>
-                    </div>
-                     <div class="group relative aspect-video rounded-xl overflow-hidden bg-slate-800 cursor-pointer" onclick="openLightbox('images/epoxycolors.jpeg')">
-                        <img src="images/epoxycolors.jpeg" onerror="this.src='https://images.unsplash.com/photo-1621905251189-08b45d6a269e?auto=format&fit=crop&q=80&w=800'" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" alt="Work">
-                        <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
-                            <i data-lucide="maximize-2" class="text-white w-8 h-8"></i>
-                        </div>
-                        <div class="absolute bottom-0 left-0 p-3 w-full bg-gradient-to-t from-black/80 to-transparent"><p class="text-white font-bold text-sm">Epoxy Color Options</p></div>
                     </div>
                 </div>
             </div>
@@ -771,7 +748,7 @@
             <div class="grid md:grid-cols-4 gap-8 mb-8 text-center md:text-left">
                 <div class="col-span-1 md:col-span-1">
                     <div class="flex flex-col items-center md:items-start mb-4">
-                        <img src="images/logo.jpeg" onerror="this.src='https://placehold.co/200x80/1e293b/e2e8f0?text=NorthernBatch'" alt="NorthernBatch Logo" class="h-20 w-auto mb-4 object-contain transition-transform hover:scale-105">
+                        <img src="images/logo.jpeg" onerror="this.src='https://placehold.co/200x80/1e293b/e2e8f0?text=NorthernBatch'" alt="NorthernBatch Logo" class="h-20 w-auto mb-4 object-contain transition-transform hover:scale-105 rounded-xl">
                         
                       
                     </div>
@@ -834,8 +811,10 @@
              if (window.scrollY > 50) {
                 navbar.classList.add('bg-white/90', 'backdrop-blur-md', 'shadow-md', 'py-3');
                 navbar.classList.remove('bg-transparent', 'py-4', 'md:py-5');
-                navBrandText.classList.remove('text-white');
-                navBrandText.classList.add('text-slate-900');
+                if(navBrandText) {
+                    navBrandText.classList.remove('text-white');
+                    navBrandText.classList.add('text-slate-900');
+                }
                 menuIcon.classList.remove('text-white');
                 menuIcon.classList.add('text-slate-900');
                 menuBtn.classList.remove('bg-black/20', 'border-white/10');
@@ -847,8 +826,10 @@
             } else {
                 navbar.classList.remove('bg-white/90', 'backdrop-blur-md', 'shadow-md', 'py-3');
                 navbar.classList.add('bg-transparent', 'py-4', 'md:py-5');
-                navBrandText.classList.add('text-white');
-                navBrandText.classList.remove('text-slate-900');
+                if(navBrandText) {
+                    navBrandText.classList.add('text-white');
+                    navBrandText.classList.remove('text-slate-900');
+                }
                 menuIcon.classList.add('text-white');
                 menuIcon.classList.remove('text-slate-900');
                 menuBtn.classList.add('bg-black/20', 'border-white/10');
