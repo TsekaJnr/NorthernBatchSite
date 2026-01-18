@@ -6,7 +6,7 @@
     <title>NorthernBatch Holdings | Converting Problems into Solutions</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://unpkg.com/lucide@latest"></script>
-    <!-- Developed and Maintained by Tseka Junior -->
+    <!-- Animation Library -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     
@@ -39,7 +39,7 @@
         }
         .float-anim { animation: float 6s ease-in-out infinite; }
 
-      
+        /* Lightbox Styles */
         #lightbox { opacity: 0; pointer-events: none; transition: opacity 0.3s ease-in-out; }
         #lightbox.active { opacity: 1; pointer-events: auto; }
     </style>
@@ -546,7 +546,7 @@
                         <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
                             <i data-lucide="maximize-2" class="text-white w-8 h-8"></i>
                         </div>
-                        <div class="absolute bottom-0 left-0 p-3 w-full bg-gradient-to-t from-black/80 to-transparent"><p class="text-white font-bold text-sm">Roof Waterproofing</p></div>
+                        <div class="absolute bottom-0 left-0 p-3 w-full bg-gradient-to-t from-black/80 to-transparent"><p class="text-white font-bold text-sm">MultiStory Plumbing</p></div>
                     </div>
                      <div class="group relative aspect-video rounded-xl overflow-hidden bg-slate-800 cursor-pointer" onclick="openLightbox('images/electrical3.jpeg')">
                         <img src="images/electrical3.jpeg" onerror="this.src='https://images.unsplash.com/photo-1621905251189-08b45d6a269e?auto=format&fit=crop&q=80&w=800'" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" alt="Work">
@@ -596,6 +596,27 @@
                             <i data-lucide="maximize-2" class="text-white w-8 h-8"></i>
                         </div>
                         <div class="absolute bottom-0 left-0 p-3 w-full bg-gradient-to-t from-black/80 to-transparent"><p class="text-white font-bold text-sm">Wiring & Installations</p></div>
+                    </div>
+                     <div class="group relative aspect-video rounded-xl overflow-hidden bg-slate-800 cursor-pointer" onclick="openLightbox('images/electrical.jpeg')">
+                        <img src="images/tiling.jpeg" onerror="this.src='https://images.unsplash.com/photo-1621905251189-08b45d6a269e?auto=format&fit=crop&q=80&w=800'" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" alt="Work">
+                        <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                            <i data-lucide="maximize-2" class="text-white w-8 h-8"></i>
+                        </div>
+                        <div class="absolute bottom-0 left-0 p-3 w-full bg-gradient-to-t from-black/80 to-transparent"><p class="text-white font-bold text-sm">Tiling</p></div>
+                    </div>
+                     <div class="group relative aspect-video rounded-xl overflow-hidden bg-slate-800 cursor-pointer" onclick="openLightbox('images/electrical.jpeg')">
+                        <img src="images/plumbingtoilet.jpeg" onerror="this.src='https://images.unsplash.com/photo-1621905251189-08b45d6a269e?auto=format&fit=crop&q=80&w=800'" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" alt="Work">
+                        <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                            <i data-lucide="maximize-2" class="text-white w-8 h-8"></i>
+                        </div>
+                        <div class="absolute bottom-0 left-0 p-3 w-full bg-gradient-to-t from-black/80 to-transparent"><p class="text-white font-bold text-sm">Toilet Installation</p></div>
+                    </div>
+                     <div class="group relative aspect-video rounded-xl overflow-hidden bg-slate-800 cursor-pointer" onclick="openLightbox('images/electrical.jpeg')">
+                        <img src="images/epooxycolors.jpeg" onerror="this.src='https://images.unsplash.com/photo-1621905251189-08b45d6a269e?auto=format&fit=crop&q=80&w=800'" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" alt="Work">
+                        <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                            <i data-lucide="maximize-2" class="text-white w-8 h-8"></i>
+                        </div>
+                        <div class="absolute bottom-0 left-0 p-3 w-full bg-gradient-to-t from-black/80 to-transparent"><p class="text-white font-bold text-sm">Epoxy Color Options</p></div>
                     </div>
                 </div>
             </div>
@@ -1000,7 +1021,7 @@
             cart = []; updateCartUI(); toggleCart();
         }
 
-      
+        // WhatsApp Send Function (Contact Form)
         function sendToWhatsapp() {
             const name = document.getElementById('contact-name').value;
             const surname = document.getElementById('contact-surname').value;
@@ -1019,7 +1040,7 @@
             window.open(url, '_blank');
         }
 
-        
+        // Gallery Modal
         const galleryModal = document.getElementById('gallery-modal');
         function openGallery() {
             galleryModal.classList.remove('hidden');
@@ -1032,7 +1053,7 @@
             document.body.style.overflow = '';
         }
 
-       
+        // Lightbox Logic
         const lightbox = document.getElementById('lightbox');
         const lightboxImg = document.getElementById('lightbox-img');
 
@@ -1046,7 +1067,7 @@
             setTimeout(() => { lightboxImg.src = ''; }, 300);
         }
         
-      
+        // Add escape key support for lightbox
         document.addEventListener('keydown', function(event) {
             if (event.key === "Escape") {
                 if (lightbox.classList.contains('active')) closeLightbox();
